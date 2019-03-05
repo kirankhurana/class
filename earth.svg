@@ -1,4 +1,24 @@
 <svg id="earth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.93 250">
   <title>Earth symbol</title>
+    <defs>
+  	<style>
+  		<!-- animating a stroke that will draw the air element on it -->
+  		path{ 
+  		animation: offset 3s linear forwards;
+  		stroke:black;  
+	<!-- converts solid stroke into a stroke dash -->
+		stroke-dasharray:900;
+		stroke-dashoffset:900;
+  		}
+
+  		@keyframes offset{
+  			0%{ stroke-dashoffset:0; fill-opacity:0;}
+  			50%{ stroke-dashoffset:900; fill-opacity:0;}
+  			100%{fill-opacity:1;}
+  		
+  		
+
+  		</style>
+  </defs>
   <path d="M276.94,0H9A9,9,0,0,0,1.22,13.46l134,232.06a9,9,0,0,0,15.54,0l134-232.06A9,9,0,0,0,276.94,0ZM107.18,137h89.5l-44.75,77.51ZM210.5,113H93.37L42.29,24.56H261.58Z" />
 </svg>
